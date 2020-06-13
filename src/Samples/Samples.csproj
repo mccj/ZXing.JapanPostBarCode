@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net472</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!--<Reference Include="System.Configuration" />
+		<Reference Include="System.Web.Extensions" />
+		<Reference Include="System.Deployment" />-->
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Properties\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ZXing.JpZipBarCode\ZXing.JapanPostBarCode.csproj" />
+	</ItemGroup>
+	
+</Project>
