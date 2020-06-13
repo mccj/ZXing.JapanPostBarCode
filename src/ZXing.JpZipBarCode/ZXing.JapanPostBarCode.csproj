@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>net4;netstandard2.0</TargetFrameworks>
+    <Authors>mccj@qq.com</Authors>
+    <Description>郵便番号、住所から郵便物用のカスタマバーコードを生成する</Description>
+    <Copyright>mccj@qq.com</Copyright>
+    <PackageProjectUrl>https://github.com/mccj/ZXing.JapanPostBarCode</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mccj/ZXing.JapanPostBarCode</RepositoryUrl>
+    <PackageTags>日本郵便,郵便番号,郵便局</PackageTags>
+    <PackageReleaseNotes>郵便番号、住所から郵便物用のカスタマバーコードを生成する</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
