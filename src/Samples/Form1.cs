@@ -21,6 +21,7 @@ namespace LibExecuter
         private void button1_Click(object sender, EventArgs e)
         {
             var code = BarCode.ConvertCustomerBarCode(textBox1.Text, textBox2.Text);
+            //var code = BarCode.ConvertCustomerBarCode("0140113", "秋田県大仙市堀見内　南田茂木　添60-1");
             var writer = new ZXing.BarcodeWriter
             {
                 //Format = ZXing.BarcodeFormat.CODE_128,
@@ -30,9 +31,9 @@ namespace LibExecuter
             writer.Options.Width = 0;// code.Length*2*100;
             writer.Options.Height = 300;// 3*100;
             //pictureBox1.Image = writer.Write("0123456789-ABCDEFGHIJKMNOPQRSTUVWXYZ");
-            //pictureBox1.Image = writer.Write("1234567ABC".PadRight(18));
-            //pictureBox1.Image = writer.Write("15400233-16-4-205".PadRight(18));
-            pictureBox1.Image = writer.Write(code.PadRight(13));
+            //pictureBox1.Image = writer.Write("1234567ABC".PadRight(22));
+            //pictureBox1.Image = writer.Write("15400233-16-4-205".PadRight(22));
+            pictureBox1.Image = writer.Write(code);
         }
     }
 }
