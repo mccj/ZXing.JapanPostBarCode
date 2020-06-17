@@ -25,7 +25,7 @@ namespace LibExecuter
             var writer = new ZXing.BarcodeWriter
             {
                 //Format = ZXing.BarcodeFormat.CODE_128,
-                Encoder = new JapanPostWriter()
+                Encoder = new JapanesePostalWriter()
             };
             writer.Options.PureBarcode = false;
             writer.Options.Width = 0;// code.Length*2*100;

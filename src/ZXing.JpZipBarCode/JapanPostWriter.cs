@@ -10,7 +10,7 @@ namespace ZXing.JapanPost
     /// 只能编码 字母数字（0-9，AZ）和连字符（-）
     /// https://www.post.japanpost.jp/zipcode/zipmanual/p11.html
     /// </summary>
-    public class JapanPostWriter : Writer
+    public class JapanesePostalWriter : Writer
     {
         // 文字→バーコード辞書
         private static readonly Dictionary<char, ImageKey[]> _barcodeCharDic = new Dictionary<char, ImageKey[]>()
