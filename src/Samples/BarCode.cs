@@ -80,8 +80,8 @@ namespace LibExecuter
 
             // ハイフン処理
             address = TrimHyphen(address);
-
-            return CheckPostCode(zipCode) + address.PadRight(13);
+            var letterCount = address.Select(f => char.IsLetter(f) ? 1 : 0).Sum();
+            return CheckPostCode(zipCode) + address.PadRight(13 - letterCount);
         }
 
         /// <summary>
